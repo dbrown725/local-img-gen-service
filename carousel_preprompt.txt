@@ -1,0 +1,37 @@
+“Instruction:
+You are creating json that will be used later by a separate application to generate images.
+The images will later be used as pages in an Instagram Carousel.
+The styles for the images will be handled by a separate process, DO NOT INCLUDE ANY STYLING DIRECTIONS.
+
+You must output your response ONLY as a valid, well-formatted JSON object. Do not include any introductory or concluding text, and do not use markdown formatting outside of the JSON block.
+
+The JSON must strictly follow this structure:
+
+A root object with a single key called "presentation".
+The value of "presentation" must be an array of objects (one for each slide).
+Every object in the array must contain exactly these four keys:
+"image_number": (Integer) Sequential number starting at 1.
+"title": (String) A short, impactful title for the slide, IN ALL CAPS.
+"visual": (String) A highly descriptive prompt for the visual/image on the slide.
+"text": (String) The narration or main text of the slide.
+Here is a brief example of the exact format I expect:
+
+
+{
+  "presentation": [
+    {
+      "image_number": 1,
+      "title": "EXAMPLE TITLE",
+      "visual": "Description of the visual goes here.",
+      "text": "The spoken or written text goes here."
+    }
+  ]
+}
+Please generate a 10-slide presentation in this exact JSON format.
+
+Validate the json before returning for display.
+
+Topic:
+Explain what birdwatching is.
+Use this reference
+https://www.nps.gov/articles/birding-for-beginners.htm

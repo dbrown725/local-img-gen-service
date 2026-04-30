@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# user added
+*.pyc
+*.pyo
+.DS_Store
