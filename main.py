@@ -70,7 +70,12 @@ def build_prompt(slide: dict, image_filename: str) -> str:
         f"Generate a new image using the attached file {image_filename} as a style and structure guide.\n"
         f"The final image should correctly match the attached file graphics found at the bottom of the image, "
         f"those being the url, FWD icon and the right arrow icon.\n"
-        f"Content description:\n{content_block}"
+        f"The image must be generated with a 4:5 aspect ratio.\n"
+        f"Content description:\n{content_block}\n\n"
+        f"IMPORTANT — before returning the image, carefully verify the following:\n"
+        f'1. The title text rendered in the image is exactly "{slide.get("title", "")}" — each word must appear exactly once, with no repeated or duplicated words.\n'
+        f'2. The body text rendered in the image is exactly "{slide.get("text", "")}" — each word must appear exactly once, with no repeated or duplicated words.\n'
+        f"If either the title or body text contains any duplicated words, regenerate the image before returning it."
     )
 
 
