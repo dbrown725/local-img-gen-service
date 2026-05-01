@@ -20,7 +20,7 @@ Automatically generates Instagram carousel slide images using AI. You provide a 
 
 Before you start, you will need:
 
-- A free **OpenRouter account** and API key — sign up at [openrouter.ai](https://openrouter.ai)
+- An **OpenRouter account** with API key and purchased credits — sign up at [openrouter.ai](https://openrouter.ai), then add credits at [openrouter.ai/credits](https://openrouter.ai/credits)
 - **Python 3.10 or later** — download from [python.org/downloads](https://www.python.org/downloads/)
 
 ---
